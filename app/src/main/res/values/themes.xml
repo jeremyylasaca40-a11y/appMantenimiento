@@ -3,6 +3,11 @@
     <style name="Base.Theme.AppMantenimiento" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryVariant">@color/primary_dark_color</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/accent_color</item>
+        <item name="android:statusBarColor">@color/primary_dark_color</item>
     </style>
 
     <style name="Theme.AppMantenimiento" parent="Base.Theme.AppMantenimiento" />

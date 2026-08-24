@@ -12,12 +12,12 @@
         android:orientation="vertical"
         android:padding="24dp">
 
-        <!-- Título -->
+        <!-- Título Principal -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="appMantenimiento"
-            android:textSize="28sp"
+            android:text="Mantenimiento de Empleados"
+            android:textSize="26sp"
             android:textStyle="bold"
             android:textColor="@color/primary_color"
             android:layout_marginBottom="8dp"
@@ -26,13 +26,13 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Registro de Empleados"
-            android:textSize="16sp"
+            android:text="Sistema de Registro"
+            android:textSize="14sp"
             android:textColor="@color/text_secondary"
             android:layout_marginBottom="24dp"
             android:gravity="center"/>
 
-        <!-- CardView para el formulario -->
+        <!-- CardView del Formulario -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -53,6 +53,7 @@
                     android:hint="Código de Empleado"
                     android:layout_marginBottom="12dp"
                     app:startIconDrawable="@android:drawable/ic_menu_agenda">
+
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etId"
                         android:layout_width="match_parent"
@@ -67,6 +68,7 @@
                     android:hint="Nombre Completo"
                     android:layout_marginBottom="12dp"
                     app:startIconDrawable="@android:drawable/ic_menu_myplaces">
+
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etNombre"
                         android:layout_width="match_parent"
@@ -81,11 +83,42 @@
                     android:hint="Cargo / Puesto"
                     android:layout_marginBottom="12dp"
                     app:startIconDrawable="@android:drawable/ic_menu_manage">
+
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etCargo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="text"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Campo Celular (NUEVO) -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Celular"
+                    android:layout_marginBottom="12dp"
+                    app:startIconDrawable="@android:drawable/ic_menu_call">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etCelular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Campo DNI (NUEVO) -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="DNI"
+                    android:layout_marginBottom="12dp"
+                    app:startIconDrawable="@android:drawable/ic_menu_info_details">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etDni"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <!-- Campo Salario -->
@@ -95,6 +128,7 @@
                     android:hint="Salario"
                     android:layout_marginBottom="20dp"
                     app:startIconDrawable="@android:drawable/ic_menu_send">
+
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etSalario"
                         android:layout_width="match_parent"
@@ -120,7 +154,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Empleados Registrados"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textStyle="bold"
             android:textColor="@color/text_primary"
             android:layout_marginBottom="12dp"/>
